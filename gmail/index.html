@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+<body>
+    <!-- by Naresh R -->
+    <!-- nav part -->
+<div class="cont_nav">
+    <div class="cont1">
+        <div class="hbox" id="hbox_3line" >
+            <i class="fa-solid fa-bars triple_line"></i>
+        </div>
+    </div>
+
+    <!-- gmail icon -->
+    <div class="cont2">
+        <div class="icon_gmail_box">
+
+        </div>
+        <!-- <div class="emp_bx">
+            
+        </div> -->
+    </div>
+
+    <!-- search box -->
+    <div class="cont3">
+        <div class="search_box">
+            <div class="coon">
+                <div class="search_icon_div"id="search_icon_div">
+                    <i class="fa-solid fa-magnifying-glass"id="icon_search"></i>
+                </div>
+                <div class="text_search_box">
+                    <input type="text" id="text_taking"placeholder="Search mail">
+                </div>
+                <div class="alter_div_box" id="alter_div">
+                    <i class="fa-solid fa-sliders"id="alter"></i>
+                </div>
+            </div>
+            
+
+
+
+
+<!-- out --------->
+ <!------------------ quick search ------------------>
+ <div class="quick_container"id="quick_container">
+    <!-- from  -->
+    <div class="from_div">
+        <div class="from">
+            <p id="from_text">From</p>
+        </div>
+        <div class="in_div"id="from_text_box_div">
+            <input type="text"id="from_text_box" >
+        </div>
+    </div>   
+    <!-- to -->
+    <div class="to_div from_div">
+        <div class="from">
+            <p id="from_text">To</p>
+        </div>
+        <div class="in_div"id="from_text_box_div">
+            <input type="text"id="from_text_box" >
+        </div>
+    </div> 
+        <!-- subject -->
+    <div class="subject_div from_div">
+        <div class="from">
+            <p id="from_text">Subject</p>
+        </div>
+        <div class="in_div"id="from_text_box_div">
+            <input type="text"id="from_text_box" >
+        </div>
+    </div>
+    <!-- has the word -->
+    <div class="has_the_word_div from_div">
+        <div class="from">
+            <p id="from_text">Has the words</p>
+        </div>
+        <div class="in_div"id="from_text_box_div">
+            <input type="text"id="from_text_box" >
+        </div>
+    </div>
+    <!-- Doesn't have -->
+    <div class="does_have_div from_div">
+        <div class="from">
+            <p id="from_text">Doesn't have</p>
+        </div>
+        <div class="in_div"id="from_text_box_div">
+            <input type="text"id="from_text_box" >
+        </div>
+    </div>
+    <!-- size -->
+    <div class="size_div from_div">
+        <div class="from">
+            <p id="from_text">Size</p>
+        </div>
+        <!-- <div class="GTN" id=":oo" role="option" aria-selected="true" aria-setsize="2" aria-posinset="1">greater than</div> -->
+        <select name="" id="gt">
+            <option value="greater than">greater than</option>
+            <option value="lesser than">lesser than</option>
+        </select>
+        <div class="in_sm_div"id="from_sm_text_box_div">
+            <input type="text"id="from_sm_text_box" >
+        </div>
+        <select name="" id="mb">
+            <option value="mb">MB</option>
+            <option value="kb">KB</option>
+            <option value="bytes">bytes</option>
+        </select>
+    </div>
+    <!-- date within -->
+    <div class="date_within_div from_div">
+        <div class="from">
+            <p id="from_text">Date within</p>
+        </div>
+        <select name="" id="days">
+            <option value="day1">1 day</option>
+            <option value="days3">3 days</option>
+            <option value="week1">1 week</option>
+            <option value="weeks2">2 weeks</option>
+            <option value="month1">1 month</option>
+            <option value="months2">2 months</option>
+            <option value="months6">6 months</option>
+            <option value="year1">1 year</option>
+        </select>
+        <div class="in_date_div"id="from_date_text_box_div">
+            <input type="date"id="from_date_text_box" >
+        </div>
+    </div>
+    <!-- search -->
+    <div class="sear_div from_div">
+        <div class="from">
+            <p id="from_text">Search</p>
+        </div>
+        <select name="" id="a_search">
+            <option value="mb">MB</option>
+            <option value="kb">KB</option>
+            <option value="bytes">bytes</option>
+        </select>
+    </div>
+     <!-- chick -->
+     <div class="c_k_div from_div">
+        <div class="cbox1_in_div">
+            <input type="checkbox" id="has_attachement">
+            <span><p id="ha">Has attachment</p></span>
+        </div>
+        <div class="cbox2_in_div">
+            <input type="checkbox" id="dont_include_chats">
+            <span><p id="dic">Don't include chats</p></span>
+        </div>
+     </div>
+      <!-- enter -->
+    <div class="enter_div from_div simply_div">
+        <div class="create_filter">
+            <p id="cf">Create filte</p>
+        </div>
+        <div class="search_form">
+            <p id="sh">Search</p>
+        </div>
+    </div>
+ </div>
+<!------------- end------------>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <!-- question symbol -->
+    <div class="cont4" id="cont4">
+        <div class="hbox1">
+            <i class="ri-question-line"id="dout"></i>
+        </div>
+
+        <!-- help ------------- -->
+        <div class="help_box"id="help_box">
+            <div class="help_i">
+                <p>Help</p>
+            </div>
+            <div class="training_i">
+                <p>Training</p>
+            </div>
+            <div class="updates_i">
+                <p>Updates</p>
+            </div>
+            <!-- <hr id="help_hr"> -->
+            <div class="sendfeedbacktogoogle_i">
+                <p>Send Feedback To Google</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- settings -->
+    <div class="cont5">
+        <div class="hbox2">
+            <i class="ri-settings-4-line" id="setting"></i>
+        </div>
+    </div>
+
+    <!-- apps -->
+    <div class="cont6"id="cont6">
+        <div class="hbox3">
+            <svg class="gb_h"id="gb_h" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path><image src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="" height="24" width="24" style="border:none;display:none \9"></image></svg>
+        </div>
+
+        <!-- app box ----------- -->
+         <div class="apps_box"id="apps_box">
+            <div class="c_app_box">
+                <div class="mini_bo">
+                    
+                
+                <div class="bd1 bbc">
+                    <div class="im_bo"><img src="acc.png" height="45px" id="acc1"></div>
+                    <div class="tx_bo">Account</div>
+                </div>
+
+                 
+                <div class="bd2 bbc">
+                    <div class="im_bo"><img src="google.png" height="45px" id="acc2"></div>
+                    <div class="tx_bo">Search</div>
+                </div>
+                
+                <div class="bd3 bbc">
+                    <div class="im_bo"><img src="googlemap.png" height="35px" id="acc3"></div>
+                    <div class="tx_bo">Maps</div>
+                </div>
+                <div class="bbc">
+                    <div class="im_bo"><img src="youtube.png" height="45px" id="acc4"></div>
+                    <div class="tx_bo">YouTube</div>
+                </div>
+                <div class="bbc">
+                    <div class="im_bo"><img src="gemini.png" height="35px" id="acc5"></div>
+                    <div class="tx_bo">Gemini</div>
+                </div>
+                <div class="bbc">
+                    <div class="im_bo"><img src="news.png" height="30px" id="acc6"></div>
+                    <div class="tx_bo">News</div>
+                </div>
+                <div class="bbc">
+                    <div class="im_bo"><img src="gmail.png" height="40px"id="acc7"></div>
+                    <div class="tx_bo">Gmail</div>
+                </div>
+                <div class="bbc">
+                    <div class="im_bo"><img src="meet.png" height="35px"id="acc8"></div>
+                    <div class="tx_bo">Meet</div>
+                </div>
+                <div class="bbc">
+                    <div class="im_bo"><img src="chat.png" height="45px"id="acc9"></div>
+                    <div class="tx_bo">Chat</div>
+                </div>
+                <div class="bbc">
+                    <div class="im_bo"><img src="contact.svg.png" height="33px"id="acc10"></div>
+                    <div class="tx_bo">Contacts</div>
+                </div>
+                <div class="bbc">
+                    <div class="im_bo"><img src="drive.png" height="35px"id="acc11"></div>
+                    <div class="tx_bo">Drive</div>
+                </div>
+                <div class="bbc">
+                    <div class="im_bo"><img src="googlecal.png" height="35px" id="acc12"></div>
+                    <div class="tx_bo">calender</div>
+                </div>
+                <div class="bbc">
+                    <div class="im_bo"><img src="play.png" height="35px"id="acc13"></div>
+                    <div class="tx_bo">Play</div>
+                </div>
+<!--                 
+                <div class="bd5 bbc"></div>
+                    <div class="im_bo"><img src="" alt=""></div>
+                    <div class="tx_bo">Maps</div>
+                </div> -->
+                </div> 
+                <!-- <div class="bd4 bbc">
+                    <div class="im_bo"><img src="" alt=""></div>
+                    <div class="tx_bo">YouTube</div>
+                </div>
+                <div class="bd5 bbc"></div>
+                    <div class="im_boo"><img src="" alt=""></div>
+                    <div class="tx_bo">nbbvvb</div>
+                </div> -->
+                <!-- <div class="bd6 bbc"></div>
+                    <div class="im_bo"><img src="" alt=""></div>
+                    <div class="tx_bo">YouTube</div>
+                </div> -->
+                <!-- <div class="bd7 bbc"></div>
+                    <div class="im_bo"><img src="" alt=""></div>
+                    <div class="tx_bo">YouTube</div>
+                </div> -->
+                <!-- <div class="bd8 bbc"></div>
+                    <div class="im_bo"><img src="" alt=""></div>
+                    <div class="tx_bo">YouTube</div>
+                </div> -->
+                
+            </div>
+            <div class="e_b">
+                <div class="s_o_g">
+                    More from Google
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- user account -->
+    <div class="cont7">
+        <div class="hbox4">
+            <div class="ci">
+                N
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3bodies -->
+ <div class="main_body">
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+        <!-- compose -->
+        <div class="compose_div_cont">
+            <div class="compose_cont" id="compose_cont">
+                <!-- icon -->
+                <i class="ri-pencil-line" id="pen_icon"></i>
+                <p id="compose_text">Compose</p>
+            </div>
+        </div>
+        <!-- inbox -->
+        <div class="inbox_div" id="inbox_div">
+            <div class="inbox">
+                <!-- icon -->
+                 <div id="ib0">
+                    <i class="ri-inbox-fill"id="inbox_icon"></i>
+                 </div>
+                    
+                 <p id="inbox_text"><b>Inbox</b></p>
+                 <p id="inbox_count">18</p>
+            </div>
+        </div>
+        <!-- starred -->
+        <div class="starred_div"id="starred_div">
+            <div class="starred">
+                <div id="ib1">
+                    <i class="ri-star-line" id="starred_icon"></i>
+                </div>
+                
+                <p id="starred_text">Starred</p>
+                <p id="starred_count">10</p>
+            </div>
+        </div>
+        <!-- snoozed -->
+        <div class="snoozed_div"id="snoozed_div">
+            <div class="snoozed">
+                <div id="ib2">
+                    <i class="ri-time-line" id="snoozed_icon"></i>
+                </div>
+                <p id="snoozed_text">Snoozed</p>
+                <p id="snoozed_count">3</p>
+            </div>
+        </div>
+        <div class="sent_div" id="sent_div">
+            <div class="sent">
+                <div id="ib3">
+                    <i class="ri-send-plane-2-line"id="sent_icon"></i>
+                </div>
+                <p id="sent_text">Sent</p>
+                <p id="sent_count">12</p>
+            </div>
+        </div>
+        <div class="drafts_div"id="drafts_div">
+            <div class="drafts">
+                <div id="ib4">
+                    <i class="ri-file-3-line" id="drafts_icon"></i>
+                </div>
+                    <p id="drafts_text">Drafts</p>
+                <p id="drafts_count">2</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- mid body -->
+     <div class="mid_body"id="mid_body">
+        <!-- toooop -->
+         <div class="top_con">
+            <!-- select box -->
+            <div class="sp">
+ 
+                <div class="select_box">
+                    <div class="c_bo">
+                        <i class="fa-regular fa-square"id="ck_b"></i>
+                        <!-- <i class="fa-regular fa-square-check"id="ck_b"></i> -->
+                    </div>
+                    <div class="d_arr">
+                        <i class="fa-solid fa-caret-down"id="d_arr_icon"></i>
+                    </div>
+
+                </div>
+                <div class="reload">
+                    <i class="fa-solid fa-rotate-right"id="reload_icon"></i>
+                </div>
+                <div class="dot3">
+                    <i class="fa-solid fa-ellipsis-vertical"id="dot3_icon"></i>
+                </div>
+            </div>
+            <div class="sp2">
+                <div class="null_space_box">
+
+                    <div class="l_arr_b">
+                        <i class="fa-solid fa-chevron-left"id="l_arr_b_icon"></i>
+                    </div>
+                    <div class="r_arr_b">
+                        <i class="fa-solid fa-chevron-right"id="r_arr_b_icon"></i>
+                    </div>
+                    <div class="key_box"id="right_side">
+                        <div class="k_bo">
+                            <i class="fa-solid fa-keyboard"id="key_board_icon"></i>
+                            <!-- <i class="fa-regular fa-square"id="ck_b"></i> -->
+                            <!-- <i class="fa-regular fa-square-check"id="ck_b"></i> -->
+                        </div>
+                        <div class="k_arr">
+                            <i class="fa-solid fa-caret-down"id="k_arr_icon"></i>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+         </div>
+         <!-- second top container -->
+        <div class="second_top_cont">
+            <!-- primary container -->
+            <div class="primary_cont">
+                <!-- img1 -->
+                <div class="pre_img">
+
+                </div>
+                <div class="pre_t">
+                    <p>Primary</p>
+                </div>
+            </div>
+            <!-- Promotions container -->
+            <div class="promotions_cont">
+                <!-- img1 -->
+                <div class="pro_img">
+
+                </div>
+                <div class="pro_t">
+                    <p>Promotions</p>
+                </div>
+            </div>
+            <!-- social container -->
+            <div class="social_cont">
+                <!-- img1 -->
+                <div class="soc_img">
+
+                </div>
+                <div class="soc_t">
+                    <p>social</p>
+                </div>
+            </div>
+        </div>
+        <!-- body message 1-->
+        <div class="tmess_cont"id="tmess_cont">
+            <div class="check_box_container"id="check_box_container">
+                <div class="six_doted_icon"><i class="ri-draggable"id="dots_6"></i></div>
+                <div class="check_b_c"id="check_b_c">
+                    <i class="ri-checkbox-blank-line"id="not_check"></i>
+                    <i class="ri-checkbox-line"id="done_check"></i>
+                </div>
+            </div>
+            <div class="star_container"id="star_container">
+                <i class="ri-star-s-line"id="not_star"></i>
+                <i class="ri-star-s-fill"id="done_star"></i>
+            </div>
+            <div class="head_message">Naresh R</div>
+            <div class="text_container_alltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium rerum cumque.</div>
+            <div class="icon_symbol_container"id="icon_symbol_container">
+                <div class="bo_icon"id="bo_icon1"><i class="ri-folder-download-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon2"><i class="ri-delete-bin-6-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon3"><i class="ri-mail-open-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon4"><i class="ri-time-line"id="i1"></i></div>
+            </div>
+            <div class="date_of_message"id="date_of_message"><p>sep 19</p></div>
+        </div>
+        
+
+        <!-- body message 2 -->
+        <div class="tmess_cont"id="tmess_cont">
+            <div class="check_box_container"id="check_box_container">
+                <div class="six_doted_icon"><i class="ri-draggable"id="dots_6"></i></div>
+                <div class="check_b_c"id="check_b_c">
+                    <i class="ri-checkbox-blank-line"id="not_check"></i>
+                    <i class="ri-checkbox-line"id="done_check"></i>
+                </div>
+            </div>
+            <div class="star_container"id="star_container">
+                <i class="ri-star-s-line"id="not_star"></i>
+                <i class="ri-star-s-fill"id="done_star"></i>
+            </div>
+            <div class="head_message">Mahesh P</div>
+            <div class="text_container_alltext">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="icon_symbol_container"id="icon_symbol_container">
+                <div class="bo_icon"id="bo_icon1"><i class="ri-folder-download-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon2"><i class="ri-delete-bin-6-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon3"><i class="ri-mail-open-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon4"><i class="ri-time-line"id="i1"></i></div>
+            </div>
+            <div class="date_of_message"id="date_of_message"><p>Nov 30</p></div>
+        </div>
+        
+        <!-- body message -->
+        <div class="tmess_cont"id="tmess_cont">
+            <div class="check_box_container"id="check_box_container">
+                <div class="six_doted_icon"><i class="ri-draggable"id="dots_6"></i></div>
+                <div class="check_b_c"id="check_b_c">
+                    <i class="ri-checkbox-blank-line"id="not_check"></i>
+                    <i class="ri-checkbox-line"id="done_check"></i>
+                </div>
+            </div>
+            <div class="star_container"id="star_container">
+                <i class="ri-star-s-line"id="not_star"></i>
+                <i class="ri-star-s-fill"id="done_star"></i>
+            </div>
+            <div class="head_message">Millan</div>
+            <div class="text_container_alltext"> dolor sit amet consectetur adipisicing elit. Consectetur praesentium rerum cumque.</div>
+            <div class="icon_symbol_container"id="icon_symbol_container">
+                <div class="bo_icon"id="bo_icon1"><i class="ri-folder-download-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon2"><i class="ri-delete-bin-6-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon3"><i class="ri-mail-open-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon4"><i class="ri-time-line"id="i1"></i></div>
+            </div>
+            <div class="date_of_message"id="date_of_message"><p>jan 18</p></div>
+        </div>
+        
+        <!-- body message -->
+        <div class="tmess_cont"id="tmess_cont">
+            <div class="check_box_container"id="check_box_container">
+                <div class="six_doted_icon"><i class="ri-draggable"id="dots_6"></i></div>
+                <div class="check_b_c"id="check_b_c">
+                    <i class="ri-checkbox-blank-line"id="not_check"></i>
+                    <i class="ri-checkbox-line"id="done_check"></i>
+                </div>
+            </div>
+            <div class="star_container"id="star_container">
+                <i class="ri-star-s-line"id="not_star"></i>
+                <i class="ri-star-s-fill"id="done_star"></i>
+            </div>
+            <div class="head_message">Saraenya</div>
+            <div class="text_container_alltext"> amet consectetur adipisicing elit. Consectetur praesentium rerum cumque Lorem ipsum dolor sit.</div>
+            <div class="icon_symbol_container"id="icon_symbol_container">
+                <div class="bo_icon"id="bo_icon1"><i class="ri-folder-download-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon2"><i class="ri-delete-bin-6-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon3"><i class="ri-mail-open-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon4"><i class="ri-time-line"id="i1"></i></div>
+            </div>
+            <div class="date_of_message"id="date_of_message"><p>Feb 1</p></div>
+        </div>
+        
+        <!-- body message -->
+        <div class="tmess_cont"id="tmess_cont">
+            <div class="check_box_container"id="check_box_container">
+                <div class="six_doted_icon"><i class="ri-draggable"id="dots_6"></i></div>
+                <div class="check_b_c"id="check_b_c">
+                    <i class="ri-checkbox-blank-line"id="not_check"></i>
+                    <i class="ri-checkbox-line"id="done_check"></i>
+                </div>
+            </div>
+            <div class="star_container"id="star_container">
+                <i class="ri-star-s-line"id="not_star"></i>
+                <i class="ri-star-s-fill"id="done_star"></i>
+            </div>
+            <div class="head_message">Collax</div>
+            <div class="text_container_alltext">sum dolor sit amet consectetur adipisicing elit. Consectetur praesentium rerum cumque.</div>
+            <div class="icon_symbol_container"id="icon_symbol_container">
+                <div class="bo_icon"id="bo_icon1"><i class="ri-folder-download-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon2"><i class="ri-delete-bin-6-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon3"><i class="ri-mail-open-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon4"><i class="ri-time-line"id="i1"></i></div>
+            </div>
+            <div class="date_of_message"id="date_of_message"><p>march 21</p></div>
+        </div>
+        
+        <!-- body message -->
+        <div class="tmess_cont"id="tmess_cont">
+            <div class="check_box_container"id="check_box_container">
+                <div class="six_doted_icon"><i class="ri-draggable"id="dots_6"></i></div>
+                <div class="check_b_c"id="check_b_c">
+                    <i class="ri-checkbox-blank-line"id="not_check"></i>
+                    <i class="ri-checkbox-line"id="done_check"></i>
+                </div>
+            </div>
+            <div class="star_container"id="star_container">
+                <i class="ri-star-s-line"id="not_star"></i>
+                <i class="ri-star-s-fill"id="done_star"></i>
+            </div>
+            <div class="head_message">Raja A</div>
+            <div class="text_container_alltext">lor sit amet consectetur adipisicing elit. Consectetur praesentium rerum cumque.</div>
+            <div class="icon_symbol_container"id="icon_symbol_container">
+                <div class="bo_icon"id="bo_icon1"><i class="ri-folder-download-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon2"><i class="ri-delete-bin-6-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon3"><i class="ri-mail-open-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon4"><i class="ri-time-line"id="i1"></i></div>
+            </div>
+            <div class="date_of_message"id="date_of_message"><p>May 13</p></div>
+        </div>
+        
+        <!-- body message -->
+        <div class="tmess_cont"id="tmess_cont">
+            <div class="check_box_container"id="check_box_container">
+                <div class="six_doted_icon"><i class="ri-draggable"id="dots_6"></i></div>
+                <div class="check_b_c"id="check_b_c">
+                    <i class="ri-checkbox-blank-line"id="not_check"></i>
+                    <i class="ri-checkbox-line"id="done_check"></i>
+                </div>
+            </div>
+            <div class="star_container"id="star_container">
+                <i class="ri-star-s-line"id="not_star"></i>
+                <i class="ri-star-s-fill"id="done_star"></i>
+            </div>
+            <div class="head_message">Google</div>
+            <div class="text_container_alltext">ip  sit amet consectetur  svqhj  ashvhsn adipisicing elit. Consectetur praesentium rerum cumque.</div>
+            <div class="icon_symbol_container"id="icon_symbol_container">
+                <div class="bo_icon"id="bo_icon1"><i class="ri-folder-download-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon2"><i class="ri-delete-bin-6-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon3"><i class="ri-mail-open-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon4"><i class="ri-time-line"id="i1"></i></div>
+            </div>
+            <div class="date_of_message"id="date_of_message"><p>june 23</p></div>
+        </div>
+        
+        <!-- body message -->
+        <div class="tmess_cont"id="tmess_cont">
+            <div class="check_box_container"id="check_box_container">
+                <div class="six_doted_icon"><i class="ri-draggable"id="dots_6"></i></div>
+                <div class="check_b_c"id="check_b_c">
+                    <i class="ri-checkbox-blank-line"id="not_check"></i>
+                    <i class="ri-checkbox-line"id="done_check"></i>
+                </div>
+            </div>
+            <div class="star_container"id="star_container">
+                <i class="ri-star-s-line"id="not_star"></i>
+                <i class="ri-star-s-fill"id="done_star"></i>
+            </div>
+            <div class="head_message">Goutham S A</div>
+            <div class="text_container_alltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium rerum cumque.</div>
+            <div class="icon_symbol_container"id="icon_symbol_container">
+                <div class="bo_icon"id="bo_icon1"><i class="ri-folder-download-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon2"><i class="ri-delete-bin-6-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon3"><i class="ri-mail-open-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon4"><i class="ri-time-line"id="i1"></i></div>
+            </div>
+            <div class="date_of_message"id="date_of_message"><p>Aug 12</p></div>
+        </div>
+        
+        <!-- body message -->
+        <div class="tmess_cont"id="tmess_cont">
+            <div class="check_box_container"id="check_box_container">
+                <div class="six_doted_icon"><i class="ri-draggable"id="dots_6"></i></div>
+                <div class="check_b_c"id="check_b_c">
+                    <i class="ri-checkbox-blank-line"id="not_check"></i>
+                    <i class="ri-checkbox-line"id="done_check"></i>
+                </div>
+            </div>
+            <div class="star_container"id="star_container">
+                <i class="ri-star-s-line"id="not_star"></i>
+                <i class="ri-star-s-fill"id="done_star"></i>
+            </div>
+            <div class="head_message">Puish</div>
+            <div class="text_container_alltext">rem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium rerum cumque.</div>
+            <div class="icon_symbol_container"id="icon_symbol_container">
+                <div class="bo_icon"id="bo_icon1"><i class="ri-folder-download-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon2"><i class="ri-delete-bin-6-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon3"><i class="ri-mail-open-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon4"><i class="ri-time-line"id="i1"></i></div>
+            </div>
+            <div class="date_of_message"id="date_of_message"><p>sep 3</p></div>
+        </div>
+        
+        <!-- body message -->
+        <div class="tmess_cont"id="tmess_cont">
+            <div class="check_box_container"id="check_box_container">
+                <div class="six_doted_icon"><i class="ri-draggable"id="dots_6"></i></div>
+                <div class="check_b_c"id="check_b_c">
+                    <i class="ri-checkbox-blank-line"id="not_check"></i>
+                    <i class="ri-checkbox-line"id="done_check"></i>
+                </div>
+            </div>
+            <div class="star_container"id="star_container">
+                <i class="ri-star-s-line"id="not_star"></i>
+                <i class="ri-star-s-fill"id="done_star"></i>
+            </div>
+            <div class="head_message">Rishi</div>
+            <div class="text_container_alltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium rerum cumque.</div>
+            <div class="icon_symbol_container"id="icon_symbol_container">
+                <div class="bo_icon"id="bo_icon1"><i class="ri-folder-download-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon2"><i class="ri-delete-bin-6-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon3"><i class="ri-mail-open-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon4"><i class="ri-time-line"id="i1"></i></div>
+            </div>
+            <div class="date_of_message"id="date_of_message"><p>Oct 14</p></div>
+        </div>
+        
+        <!-- body message -->
+        <div class="tmess_cont"id="tmess_cont">
+            <div class="check_box_container"id="check_box_container">
+                <div class="six_doted_icon"><i class="ri-draggable"id="dots_6"></i></div>
+                <div class="check_b_c"id="check_b_c">
+                    <i class="ri-checkbox-blank-line"id="not_check"></i>
+                    <i class="ri-checkbox-line"id="done_check"></i>
+                </div>
+            </div>
+            <div class="star_container"id="star_container">
+                <i class="ri-star-s-line"id="not_star"></i>
+                <i class="ri-star-s-fill"id="done_star"></i>
+            </div>
+            <div class="head_message">Kruthartha</div>
+            <div class="text_container_alltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium rerum cumque.</div>
+            <div class="icon_symbol_container"id="icon_symbol_container">
+                <div class="bo_icon"id="bo_icon1"><i class="ri-folder-download-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon2"><i class="ri-delete-bin-6-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon3"><i class="ri-mail-open-line"id="i1"></i></div>
+                <div class="bo_icon"id="bo_icon4"><i class="ri-time-line"id="i1"></i></div>
+            </div>
+            <div class="date_of_message"id="date_of_message"><p>dec 31</p></div>
+        </div>
+        
+        <!-- by Naresh R -->
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- right nav -->
+     <div class="right_nav">
+        <!-- calender icon -->
+        <div class="cal_b">
+            <div class="cal"></div>
+        </div>
+        <div class="note_b">
+            <div class="note"></div>
+        </div>
+        <div class="task_b">
+            <div class="task"></div>
+        </div>
+        <div class="contact_b">
+            <div class="contact"></div>
+        </div>
+        <!-- dash -->
+         <div class="dash"></div>
+
+         <!-- pluss -->
+          <div class="pluss">
+            <i class="ri-add-fill"></i>
+          </div>
+
+     </div>
+
+ </div>
+
+
+ <div class="box">
+    
+ </div>
+
+ 
+    <script src="main.js"></script>
+</body>
+</html>
